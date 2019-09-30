@@ -1,0 +1,27 @@
+{
+  "name": "express-sql-boilerplate",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcrypt": "latest",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "jsonwebtoken": "^8.1.1",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.0.3",
+    "morgan": "~1.9.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.1",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.19.1",
+    "serve-favicon": "~2.4.5"
+  }
+}
