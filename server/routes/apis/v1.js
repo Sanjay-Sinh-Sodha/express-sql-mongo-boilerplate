@@ -4,6 +4,8 @@ const loginController = require('../../controllers/apis/login');
 const dashboardController = require('../../controllers/apis/dashboard');
 const companyController = require('../../../dbcontroller').company;
 const imageController = require('../../controllers/apis/thumbor');
+const elasticSearchController = require('../../controllers/apis/elasticsearch');
+const pdfController = require('../../controllers/apis/pdf');
 
 const router = express.Router();
 
@@ -18,5 +20,6 @@ router.use('/image/edit', imageController);
 router.get('/testcheck', (req, res) => {
   res.send({ msg: 'success' });
 });
-
+router.use('/elasticsearch', elasticSearchController);
+router.use('/pdf', pdfController);
 module.exports = router;
